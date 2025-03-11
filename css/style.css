@@ -1,0 +1,206 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+.container {
+    max-width: 1230px;
+    /* Ширина контейнера = макет + поля */
+    padding: 0 30px;
+    margin: 0 auto;
+}
+/* Header */
+.header {
+    padding-top: 46px;
+    background-color: #F1F1F1;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 76px;
+    padding: 60px 0 0;
+}
+.logo {
+    position: relative;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    /* Отступ для желтой точки */
+    padding-right: 12px;
+    padding-top: 3px;
+    line-height: 1;
+}
+.logo::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color:#FDA300;
+    border-radius: 50%;
+}
+
+/* Nav */
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    list-style: none;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+.nav-link.active {
+    color: rgb(130, 130, 130);
+}
+.nav-link:hover {
+    color: #FDA300;
+}
+
+/* Кнопка мобильная */
+.nav-button {
+    display: none;
+}
+
+/* Hero */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    /* align-items: center; */
+}
+.header-content {
+    max-width: 500px;
+    margin-top: 124px;
+}
+.header-title {
+    font-weight: 600;
+    font-size: 2.75rem;
+    margin-bottom: 20px;
+}
+.header-content p {
+    line-height: 2;
+}
+/* Service */
+.services {
+    padding: 90px 0;
+
+}
+.servirces-row {
+    display: flex;
+    column-gap: 30px;
+}
+.service-card img {
+    margin-bottom: 30px;
+}
+.service-title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.service-text {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 2;
+}
+/* Portfolio */
+
+.portfolio {
+    background-color: #F1F1F1;
+    padding: 90px 0;
+}
+.portfolio-title-wrapper {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.title-1 {
+    font-size: 2.125rem;
+    font-weight: 600;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.project:not(:last-child) {
+    margin-bottom: 90px;
+}
+
+.project-img {
+    margin-bottom: 40px;
+    max-width: 100%;
+    height: auto;
+
+}
+.project-title {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.project-title a {
+    color: black;
+}
+
+/* Contact */
+.contacts {
+    padding: 90px 0;
+    display: flex;
+    text-align: center;
+}
+.contacts-content,
+.contacts-title {
+    margin-bottom: 40px;
+}
+
+.contacts-content {
+    /* Рассмомтреть вариант использования br */
+    max-width: 300px;
+    margin: 0 auto;
+    
+}
+.contacts-text {
+    color: rgb(7, 7, 7);
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.contacts-button {
+    display: inline-block;
+    margin-bottom: 80px;
+    background: rgb(7, 7, 7);
+    padding: 7px 22px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+.contacts-button:hover,
+.contacts-button:focus {
+    background-color: #323232;
+    transform: translateY(-3px);
+}
+.btn {
+    color: white;
+    text-decoration: none;
+}
+.contacts-social {
+    display: flex;
+    justify-content: center;
+    column-gap: 61.35px;
+    margin-bottom: 40px;
+}
+.contacts-footer {
+    color: rgb(130, 130, 130);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+}
